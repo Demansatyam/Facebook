@@ -10,7 +10,7 @@ p{
 
 .content{
 
-    height: 360px;
+    height: 210px;
     width: 400px;
     /* border: 1px solid black; */
     margin-top: 140px;
@@ -34,9 +34,11 @@ input{
 }
 
 input[type = "button"]{
+    width: 150px;
     background-color: rgb(45, 206, 45);
     color: white;
     border-radius: 4px;
+   margin-left: 50px;
 }
 
 input[type="password"]{
@@ -63,6 +65,14 @@ button[type="submit"]{
     border-radius: 6px;
 }
 
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+
 .login{
     height: 360px;
     width: 400px;
@@ -73,7 +83,7 @@ button[type="submit"]{
 .input{
     height: 220px;
     width: 270px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 15px;
     padding: 20px;
     border-radius: 8px;
@@ -84,13 +94,7 @@ button[type="submit"]{
     margin: 15px;
 }
 
-.main{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 50px;
-    flex-wrap: wrap;
-}
+
 
 footer{
     text-align: center;
@@ -106,8 +110,25 @@ footer{
         align-content: center;
     }
 
+    p{
+        display: none;
+    }
+
     .main{
-        flex-direction: column;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
         align-content: center;
     }
 }
+
+/* @media (min-width: 1000px) {
+    
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 50px;
+        flex-wrap: wrap;
+    }
+} */
